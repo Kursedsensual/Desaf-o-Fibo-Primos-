@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Web: Fibonacci y Primos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Matemáticas que resuelven problemas: Fibonacci y Números Primos en la vida real</h1>
+        <p>Estudiante: Sergio Fernando Mariscal Flores</p>
+    </header>
+
+    <main class="container">
+        <section class="seccion">
+            <h2>Contexto del problema</h2>
+            <p>Muchos problemas reales pueden analizarse usando patrones matemáticos. Este proyecto aplica estas secuencias para resolver problemas de seguridad informática y planificación de ahorros.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>Explicación de los algoritmos</h2>
+            <p><strong>Fibonacci:</strong> Es una secuencia donde cada número se obtiene sumando los dos anteriores. Se calcula mediante un ciclo iterativo sumando variables simples.</p>
+            <p><strong>Números Primos:</strong> Un número es primo si solo se puede dividir exactamente entre 1 y sí mismo. Lo verificamos contando cuántos divisores exactos tiene.</p>
+        </section>
+
+        <section class="seccion interactiva">
+            <h2>Herramienta de Cálculo</h2>
+            <form id="formularioMatematico">
+                <div class="grupo-form">
+                    <label for="selectorProblema">Selecciona el problema a resolver:</label>
+                    <select id="selectorProblema">
+                        <option value="primo">1. Números primos en seguridad (Verificar código)</option>
+                        <option value="fibo">2. Fibonacci en ahorro progresivo</option>
+                        <option value="combinado">3. Fibonacci y primos combinados</option>
+                    </select>
+                </div>
+
+                <div class="grupo-form">
+                    <label id="labelDato" for="inputDato">Ingresa el código numérico a verificar:</label>
+                    <input type="number" id="inputDato" min="1" required placeholder="Ej. 17">
+                </div>
+
+                <button type="submit" id="btnEjecutar" class="btn">Calcular / Verificar</button>
+            </form>
+
+            <div id="areaResultado" class="resultado oculto">
+                </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Conclusión</h2>
+            <p>La matemática es fundamental en la tecnología. Fibonacci nos permite proyectar crecimientos escalonados (como ahorros o poblaciones), mientras que los números primos son la base estructural para validar la seguridad de accesos y proteger información.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Enlaces del Proyecto</h3>
+        <a id="linkRepo" href="#" target="_blank">Repositorio Git</a> | 
+        
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
